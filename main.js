@@ -118,3 +118,4 @@ function opentab(tabname){
   document.getElementById(tabname).classList.add("active-tab")
 }
 // ----------------porfolio--------
+document.getElementById("year").innerHTML = (new Date().getFullYear());
