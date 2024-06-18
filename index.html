@@ -11,7 +11,11 @@
     <header class="page-header">
        <div class="container">
         <nav>
+            <div class="as">
+                <img src="AS.png" alt="">
+            </div>
             <div class="logo">
+          
                 <h4>PORTFOLIO</h4>
             </div>
             <ul class="nav-links">
@@ -21,12 +25,15 @@
                 <li><a class="scrollTo" href="#Portfolio">Portfolio</a></li>
               
                 <li><a class="scrollTo" href="#experience">Experience</a></li>
-                <li><a class="scrollTo" href="#row">Contact Me</a></li>
+                <li><a class="scrollTo" href="#me">Contact Me</a></li>
+                
+                <li><a class="scrollTo" href="#row">My Address</a></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
+               
             </div>
         </nav>
  
@@ -34,7 +41,7 @@
    
       </header>
       <div class="header-text">
-        <p>UI/UX ,GRAPHIC DESIGNER Designer</p>
+        <p id="quote2">UI/UX ,GRAPHIC DESIGNER Designer</p>
         <h1>I AM <span class="typed"></span></h1>
     </div>
 
@@ -48,7 +55,7 @@
                                </div>
                 <div class="about-col-2">
      <h1 class="sub-title">About Me</h1>
-     <p>I'm a UX/UI Designer with a background in Psychology, which gives me a unique edge in empathizing with users and improving their experience through design.Always eager to take new challenges and push the boundaries of what is possible.My research experience has refined my problem-solving skills and user insights.I'm always eager to learn new things and take on new challenges in the design field.</p>
+     <p id="quote">I'm a UX/UI Designer with a background in Psychology, which gives me a unique edge in empathizing with users and improving their experience through design.Always eager to take new challenges and push the boundaries of what is possible.My research experience has refined my problem-solving skills and user insights.I'm always eager to learn new things and take on new challenges in the design field.</p>
 <div class="tab-titles">
     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
     <p class="tab-links" onclick="opentab('education')">Education</p>
@@ -57,8 +64,8 @@
 </div>
 <div class="tab-contents active-tab" id="skills">
     <ul>
-        <li><span>UI?UX</span><br>Designing App interfaces</li>
-        <li><span>App Development</span><br>Building Android/ios</li>
+        <li><span>UI/UX</span><br>Designing App interfaces</li>
+      
         <li><span>Graphic</span><br>Logo, Layout design,Illustration,branding</li>
         
 
@@ -79,7 +86,7 @@
 <div>
     <button class="but">
        
-        <input type="button" value="Arpita_Samanta_CV!" onclick="window.open('https://arpitasamantaportfolio.netlify.app/Arpita_Samanta_CV.pdf');" class="newButton"/>
+        <input type="button" value="MY CV" onclick="window.open('https://arpitasamantaportfolio.netlify.app/Arpita_Samanta_CV.pdf');" class="newButton"/>
         </button>
 </div>
                 </div>
@@ -521,17 +528,35 @@
 </div>
     
  </div>
-
+ <!-- ---------------GET IN TOUCH--------- -->
+ <div id="me ">
+    <div class="me">
+        <h1>Contact Me</h1>
+    <div class="GET">
+        
+  <form onsubmit="sendEmail(); reset(); return false">
+  
+    <h3>GET IN TOUCH</h3>
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Email id" required>
+    <input type="text" id="phone" placeholder="Phonr no." required>
+    <textarea  id="massage" rows="4"  placeholder="How can we help you?"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</div>
+</div>
+</div>
        <!-- ........... footer........ -->
        <footer>
         <div id="row">
         <div class="row">
            
             <div class="col">
-                <h3>Contact Me <div class="underline"><span></span></div></h3>
-                <P>188,Rja Subodh Chandra Mallick Rd,Jadavpur,Kolkata,West Bengal 700032</P>
+                <h3>My Address <div class="underline"><span></span></div></h3>
+                <P>188,Raja Subodh Chandra Mallick Rd,Jadavpur,Kolkata,West Bengal 700032</P>
                 <p class="email-id">arpitasamanta006@gmail.com</p>
-                <h4> +91_9641477806</h4>
+               
+                <p class="call"><a href="tel:+91_9641477806">+91_9641477806</a></p>
             </div>
             <div class="col">
                 <h3>Links <div class="underline"><span></span></div></h3>
@@ -539,24 +564,29 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Work</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#">Experience</a></li>
                 </ul>
             </div>
             <div class="col">
                 <h3>My Socilmedia<div class="underline"><span></span></div></h3>
            
                 <div class="socil-icons">
-                    <img src="facebook.png" alt="img" class="facebook">
-                    <img src="ins.png" alt="img" class="ins">
-                    <img src="gr.png" alt="img" class="gr">
+                    <a href="https://www.facebook.com/" src="facebook.com"><img src="facebook.png" alt="img" class="facebook"></a>
+                    <a href="https://www.linkedin.com/feed/" src="linkedin.com"><img src="ins.png" alt="img" class="ins"></a>
+                    <a href="https://www.instagram.com/" src="instagram.com"><img src="gr.png" alt="img" class="gr"></a>
                 </div>
-                <p>Copyright &copy; <span id="year"></span>. All Rights Reserved.</p>
+              
                 </div>
             </div>
         </div>
         <hr>
+        <p class="copy">Copyright &copy; <span id="year"></span>. All Rights Reserved.</p>
     </footer>
 
+    <script src="gsap.min.js"></script>
+    <script src="SplitText3.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script type="text/javascript" src="jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
     <script type="text/javascript" src="main.js"></script>
@@ -568,5 +598,24 @@
             loop: true,
         });
     </script>
+    <!-- -------------GET IN TOUCH---------- -->
+    <script>
+        function sendEmail(){
+            Email.send({
+    secureToken:"5d5449a5-3c63-4f36-be1a-4a63bd9c7806",
+    
+    To : 'arpitasamanta006@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact form enquiry",
+    Body : "Name: " + document.getElementById("name") .value 
+    + "<br> Email: "+ document.getElementById("email").value
+    + "<br> Phone no: "+ document.getElementById("phone").value
+    + "<br> Massage: "+ document.getElementById("massage").value
+}).then(
+  message => alert(" Massage Sent Succesfully")
+);
+        }
+    </script>
+     
 </body>
 </html>

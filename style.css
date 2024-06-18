@@ -14,7 +14,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(cartoongirl.png);
+    background-image: url(ap\ photo.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -27,6 +27,19 @@ CSS * {
     box-sizing: border-box;
     outline: none;
 }
+
+/* ----------h4 text animation----------- */
+h4 {
+    max-width: 600px;
+  }
+  
+  .lineParent {
+    overflow: hidden;
+  }
+
+/* ----------h1 text animation----------- */
+
+
 
 
 /* ------------------------------ */
@@ -78,12 +91,17 @@ nav {
 }
 
 /*-- Responsive menu css starts --*/
+.as{
+   width: 60px;
+   height: 40;
+}
 
 .logo {
     color: #d8d8d8;
     font-family: 'Eczar', serif;
     letter-spacing: 5px;
     font-size: 2rem;
+    padding-left: 30px;
 }
 
 ul.nav-links {
@@ -150,21 +168,22 @@ ul.nav-links.nav-active{
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and  (max-width: 768px)  {
     /* body{
         display: none;
     } */
+
     .nav-links{
         position: absolute;
         right: 0px;
         height: 90vh;
-        background: #3d3037;
+  
         top: 16vh;
         width: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        transform: translateX(100%);
+  
         transition:transform 0.5s ease-in;
         padding: 0 20px;
     }
@@ -310,7 +329,7 @@ margin-bottom:30px ;
 }
 
 .sub-title {
-    padding-left: 70px;
+    padding-left: 200px;
 }
 
 .services-list {
@@ -364,6 +383,7 @@ margin-bottom:30px ;
 .Soci {
     text-align: center;
     font-size: 1.5rem;
+    padding-top: 40px;
 }
 
 .work_list {
@@ -396,7 +416,8 @@ margin-bottom:30px ;
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    background: linear-gradient(#00093c, #ff004f);
+    opacity: 90%;
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -585,6 +606,15 @@ form button {
     margin-right: 15px;
     cursor: pointer;
 }
+.img1{
+  
+    width: 30px;
+    height: 20px;
+}
+.arow{
+    width: 20px;
+    height: 10px;
+}
 
 .underline {
     width: 100%;
@@ -607,7 +637,13 @@ form button {
     left: 10px;
     animation: moving 2s linear infinite;
 }
-
+.copy{
+    padding-left: 100px;
+    padding-top: 20px;
+}
+.call a{
+    color: white;
+}
 @keyframes moving {
     0% {
         left: -20px;
@@ -708,3 +744,48 @@ text-align: center;
     padding-inline: 0;
   }
     }
+
+/* -----------------GET---------- */
+.GET{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+form h3{
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+}
+form button{
+   padding: 15px;
+   background: #ff5361;
+   color: white;
+   font-size: 18px;
+   border: 0;
+   outline: none;
+   cursor: pointer;
+   width: 150px;
+   margin: 20px auto;
+   border-radius: 30px;
+}
+.me{
+    text-align: center;
+    padding-bottom: 40px;
+}
